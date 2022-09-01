@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+<style>
+html{
+    scroll-behavior: smooth;
+}
+html, body{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-image: url("https://img.freepik.com/free-vector/vector-background-abstract-polygon-triangles_2065-346.jpg?w=2000");
+}
+.navBar{    
+    position: fixed;
+    margin-top: -100px;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: 'Raleway', sans-serif;
+}
+.navBar a{
+    text-decoration: none;
+    color: white;
+}
+.navBar ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0 20px;
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.navBar ul li::after{
+    position: relative;
+    content: '';
+    display: block;
+    background-color: rgba(0, 87, 124, 0.65);
+    height: 5px;
+    width: 0;
+    transition: 0.3s;
+    bottom: 5px;
+}
+.navBar ul li:hover::after{
+    width: 100%;
+}
+.georgeBar{
+    font-size: 22px;
+    font-weight: bolder;
+    margin-right: 30%;  
+}
+.content{
+    margin: 100px auto;
+    background-color: rgba(0, 87, 124, 0.65);
+    width: 75%;
+    align-items: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+}
+.homePage{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Raleway', sans-serif;
+    align-items: center;
+    justify-content: center;
+    margin-right: ;
+    width: 100%;
+}
+#name{
+    padding: 3%;
+}
+.image{
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+    width: 350px;
+    height: 350px;
+    margin: 5%;
+    border-radius: 50%;
+}
+#dp {
+    width: 100%;
+    height: 100%;
+    background-image: url("https://scontent.fbag1-2.fna.fbcdn.net/v/t1.6435-9/86271017_2797025697030026_3866091545656557568_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeEkdjhQQ_umuzNLUjpWqXb7JVJgbb5jm8klUmBtvmObyYOH3AqQvi2Z2J_ANJs2lOcUTX3G54zUzuhFtHEsEvJm&_nc_ohc=Kg9s9GAYmwkAX9Jr-T0&_nc_ht=scontent.fbag1-2.fna&oh=00_AT9JLH_Ff8_bnjoR-gXinMoncgbF0IbWbTUkHddExFuYrQ&oe=62BEB343");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-radius: 50%;
+}
+.text {
+    padding-bottom: 5%;
+    text-align: center;
+    color: white;
+}
+</style>
+    <div class="navBar">
+        <div class="georgeBar"><a href="Home.html">GPDC</a>
+        </div>
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="About Me.html">About Me</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+    </div>
+</head>
+<body>
+<div class="content">
+    <div class="homePage">
+        <div class="image">
+            <div id="dp"></div>
+        </div>
+        <div class="text">
+            <h1 id="name">
+                George Paolo Dela Cruz<br>
+                </h1>
+            <h3 id="description">
+                Computer Engineering student at Polytechnic University.
+            </h3>
+        </div>
+    </div>
+</div>
+</body>
+</html>

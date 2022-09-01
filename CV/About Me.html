@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Me</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+<style>
+    html{
+    scroll-behavior: smooth;
+}
+html, body{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-image: url("https://img.freepik.com/free-vector/vector-background-abstract-polygon-triangles_2065-346.jpg?w=2000");
+}
+.navBar{    
+    position: fixed;
+    margin-top: -100px;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: 'Raleway', sans-serif;
+}
+.navBar a{
+    text-decoration: none;
+    color: white;
+}
+.navBar ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0 20px;
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.navBar ul li::after{
+    position: relative;
+    content: '';
+    display: block;
+    background-color: rgba(0, 87, 124, 0.65);
+    height: 5px;
+    width: 0;
+    transition: 0.3s;
+    bottom: 5px;
+}
+.navBar ul li:hover::after{
+    width: 100%;
+}
+.georgeBar{
+    font-size: 22px;
+    font-weight: bolder;
+    margin-right: 30%;  
+}
+.divider{
+    width: 100%;
+}
+.dividerhalf{
+    margin: 10px 0;
+    width: 50%;
+}
+.content{
+    margin: 100px auto;
+    background-color: rgba(0, 87, 124, 0.65);
+    width: 75%;
+    align-items: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    font-family: 'Raleway', sans-serif;
+}
+.text {
+    padding-bottom: 3%;
+    text-align: left;
+    color: white;
+    font-size: 1.17em;  
+}
+.subtext{
+    margin-left: 1em;
+}
+.title{
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+}
+.aboutMe{
+    padding: 3%;
+    display: block;
+    margin: auto;
+    width: 75%;
+}
+.row{
+    padding: 3%;
+    padding-top: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0px auto;
+    width: 75%;
+    justify-content: space-between;
+}
+.left, .right{
+    padding-bottom: 3%
+}
+.right{
+    margin: 0;  
+}
+</style>
+        <div class="navBar">
+        <div class="georgeBar"><a href="Home.html">GPDC</a>
+        </div>
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="About Me.html">About Me</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+    </div>
+</head>
+<body>
+<div class="content">
+    <div class="aboutMePage">
+        <div class="aboutMe">
+            <div class="title">
+                About Me<hr class="divider">         
+            </div>
+            <div class="text" id="aboutMeDescription">
+                I am George Paolo Dela Cruz, a 2nd year of Bachelor's Degree in Computer Engineering at Polytechnic University of the Philippines currently in pursuit of greater knowledge in the field of Computer Engineering. I also enjoy playing volleyball and listening to good music.
+            </div>
+        </div>
+        <div class="row">
+            <div class="left">
+                <div class="education">
+                    <div class="title">
+                        Education<hr class="divider">
+                    </div>
+                    <div class="text">
+                        Polytechnic University of the Philippines, 2020-Present
+                        <div class="subtext">Bachelor's Degree</div>
+                        <hr class="dividerhalf">
+                    </div>
+                    <div class="text">
+                        Mapúa University, 2018-2020
+                        <div class="subtext">Senior High School</div>
+                        <hr class="dividerhalf">
+                    </div>
+                    <div class="text">
+                        Ednas School, 2014-2018
+                        <div class="subtext">Junior High School</div><hr class="dividerhalf">
+
+                    </div>
+                    <div class="text">
+                        Ednas School, 2008-2014
+                        <div class="subtext">Elementary</div>
+                    </div>
+                </div><hr class="divider">
+            </div>
+            <div class="right">
+                <div class="skills">
+                    <div class="title">
+                        Skills<hr class="divider">
+                    </div>
+                    <div class="text">
+                        Basic knowledge in Python<hr class="dividerhalf">
+                    </div>
+
+                    <div class="text">
+                        Basic knowledge in C#<hr class="dividerhalf">
+                    </div>
+                    <div class="text">
+                        Basic knowledge in HTML<hr class="dividerhalf">
+                    </div>
+                    <div class="text">
+                        Basic knowledge in CSS<hr class="dividerhalf">
+                    </div>
+                    <div class="text">
+                        Active Listening<hr class="dividerhalf">
+                    </div>
+                    <div class="text">
+                        Critical Thinking
+                    </div>
+                    <hr class="divider">
+                </div>
+        </div>
+    </div>
+</div>    
+</body>
+</html>
